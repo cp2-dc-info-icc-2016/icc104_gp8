@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+body {
+    background-image: url("apa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.topo {
+  background-color: #1C1C1C;
+  width: 1520px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+
+}
+
+#centro {
+background: red;
+width: 1000px;
+padding:1px;
+text-align:center;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+ border-radius:7px;
+background-repeat: no-repeat;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+    align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+</style>
+
+<head>
+ <title>L'aquila</title>
+ <meta charset="utf-8">
+</head>
+
+<body>
+
+  <div class=" topo">
+
+  </div>
+<div>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">Cardápio</a></li>
+      <li><a href="#about">Quem somos</a></li>
+      <li><a href="#about">Onde estamos</a></li>
+      <li><a href="#contact">Contato</a></li>
+
+    </ul>
+  </div>
+
+  <div id="centro">
+    <p>
+      <font color="white">Aconchegante,sofisticado e elegante, em toda a simplicidade, que só uma trattoria italiana pode ter.</font>
+    </p>
+  </div>
+
+
+</body>
+
+
+
+</html>
