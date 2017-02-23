@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-<script>
-
-</script>
 <style>
 body {
 	background-image: url(apa.jpg);
@@ -45,7 +42,7 @@ li a {
 	color: #FFF;
 	text-align: center;
 	padding: 8px;
-	width: 379px;
+	width: 775px;
 	text-decoration: none;
 	margin: 0px;
 }
@@ -89,18 +86,18 @@ background-color: #333
 
 
 div.d1{
-	height:900px;
+	height:350px;
 	width:auto;
 }
 div.d2{
-	height:770px;
+	height:300px;
 	width:auto;
 }
 
 div.d3{
 	background-color: black;
 	background-color: rgba(0, 0, 0,0.7);
-	height:130px;
+	height:auto;
 	width:auto;
 }
 div.d4{
@@ -151,11 +148,19 @@ footer {
 					margin-left: 650px;
 }
 
+.my {
+	width: 650px;
+	background: center;
+	margin-left: 450px;
+}
+
 </style>
 <head>
+
 <title>L'aquila</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body class="m1">
@@ -165,11 +170,10 @@ footer {
     <ul>
       <li><a href="Aquila.html">Home</a></li>
       <li><a href="Cardapio.html">Cardápio</a></li>
-      <li><a href="#about">Quem somos</a></li>
-      <li><a href="#about">Onde estamos</a></li>
     </ul>
   </div>
 </nav>
+
 	<div id="centro">
 <p> <font color="white">Aconchegante, sofisticado e elegante, em toda a simplicidade, que somente uma trattoria italiana pode ter.</font> </p>
 
@@ -188,8 +192,16 @@ footer {
 					<p id="descric"> Um gordo, um preto e dois brancos que querem ganhar pontos</p>
 					</div>
 
+					<div class="divslide">
+					<img class="my" src="R1.jpg">
+					<img class="my" src="R2.jpg">
+					<img class="my" src="opo.jpg">
 
-	</div>
+
+					<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+					<a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+					</div>
+
 <div class="d1">
 	<div class="d2">
 
@@ -202,5 +214,30 @@ footer {
 <footer>
 		<font color="white"> Copyright <font>
 </footer>
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("my");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
+</script>
+
+
 </body>
+
 </html>

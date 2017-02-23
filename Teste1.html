@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<script>
+
+</script>
+<style>
+body {
+    background-image: url(apa.jpg);
+    background-repeat: no-repeat;
+
+    margin: auto;
+    width:auto;
+
+
+}
+.topo {
+    background-color: #1C1C1C ;
+    width: auto;
+    height: 70px;
+    text-align: center;
+
+}
+#centro {
+    background-color: black;
+    background-color: rgba(0,0,0,0.7);
+    width: auto;
+    padding: 1px;
+    text-align: center;
+}
+ul {
+    list-style-type:none ;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: auto;
+}
+li {
+    float: left;
+    align: center;
+}
+li a {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 8px;
+    width: 775px;
+    text-decoration: none;
+    margin: 0px;
+}
+li a:hover:not(.active) {
+    background-color: #1C1C1C ;
+}
+.active {
+    background-color: #FF530D ;
+}
+
+#mapa{
+position: absolute;
+margin-left: -770px;
+
+}
+
+#info{
+background-color: white;
+width: 1585px;
+height: 300px;
+margin-bottom: -100px;
+position: absolute;
+top: 60%;
+left: 10%;
+margin-left: -159px;
+margin-top: 150px;
+text-align: center;
+background-color: #333
+}
+
+}
+#pi1{
+    background-color:
+}
+#pi2{
+    background-color:
+}
+#pi3{
+    background-color:
+}
+
+
+div.d1{
+    height:900px;
+    width:auto;
+}
+div.d2{
+    height:600px;
+    width:auto;
+}
+
+div.d3{
+    background-color: black;
+    background-color: rgba(0, 0, 0,0.7);
+    height:130px;
+    width:auto;
+}
+div.d4{
+    background: white;
+    height: 150px;
+    margin-left:220px;
+    margin-right:220px;
+
+}
+
+#tel{
+    color: white;
+    margin-left: -500px;
+}
+
+#texto1{
+    color: white;
+    margin-left: -30px;
+}
+
+#texto{
+    color: white;
+    margin-left: -500px;
+    margin-top: -140px;
+}
+
+footer {
+    background-color: black;
+ background-color: rgba(0, 0, 0,0.7);
+    text-align: center;
+    height: 300px;
+
+
+}
+
+#pag{
+            color: white;
+            margin-left: -20px;
+}
+
+#texto2{
+    color: white;
+    margin-left: 350px;
+    margin-top: -225px;
+}
+
+#descric{
+                    color: white;
+                    margin-left: 650px;
+}
+
+.my {
+
+  width: 650px;
+	background: center;
+	margin-left: 450px;
+}
+
+
+</style>
+<head>
+<title>L'aquila</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="m1">
+<div class=" topo"> <img src="logo.jpg"> </div>
+<nav>
+ <div>
+   <ul>
+     <li><a href="Aquila.html">Home</a></li>
+     <li><a href="Cardapio.html">Cardápio</a></li>
+   </ul>
+ </div>
+</nav>
+    <div id="centro">
+<p> <font color="white">Aconchegante, sofisticado e elegante, em toda a simplicidade, que somente uma trattoria italiana pode ter.</font> </p>
+
+
+                    <div id=info>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.967063625993!2d-43.18237950284687!3d-22.914585650070798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f64e60b9037%3A0x1628adf9a072a0ac!2sAv.+Mem+de+S%C3%A1+-+Centro%2C+Rio+de+Janeiro+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1487247997346" width="400" height="300" frameborder="0" style="border:0" allowfullscreen id="mapa"></iframe>
+                    <h2  id="texto1"> Páginas </h2>
+                    <p id="pag"> Facebook: L'aquila</p>
+                    <p id="pag"> Instagram: @LaquilaOficial</p>
+                    <p id="pag"> Twitter: @LaquilaOficial</p>
+                    <h2 id="texto"> Contato </h2>
+                    <p id="tel">(021) 999875848</p>
+         <br><p id="tel">(021) 999875848</p></br>
+           <p id="tel">restauranteaquila@jujuba.com.br</p>
+                    <h3 id="texto2"> Quem somos: </h3>
+                    <p id="descric"> Um gordo, um preto e dois brancos que querem ganhar pontos</p>
+                  </div>
+
+
+    </div>
+<div class="d1">
+    <div class="d2">
+      <div class="divslide">
+                <img class="my" src="R1.jpg">
+                <img class="my" src="R2.jpg">
+                <img class="my" src="R3.jpg">
+                <img class="my" src="R4.jpg">
+
+                <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">   O  </a>
+                <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">   OO</a>
+
+   </div>
+   <div class="d3">
+</div>
+
+</div>
+
+<footer>
+        <font color="white"> Copyright <font>
+</footer>
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("my");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
+</script>
+
+</body>
+</html>

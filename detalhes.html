@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<style>
+body {
+	background-image: url(apa.jpg);
+	background-repeat: no-repeat;
+	margin: auto;
+	width:auto;
+
+
+}
+.topo {
+	background-color: #1C1C1C;
+	width: auto;
+	height: 70px;
+	text-align: center;
+}
+
+ul {
+	list-style-type:none ;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	top: 0;
+	width: auto;
+}
+li {
+	float: left;
+	align: center;
+}
+li a {
+	display: block;
+	color: #FFF;
+	text-align: center;
+	padding: 8px;
+	width: 775px;
+	text-decoration: none;
+	margin: 0px;
+}
+li a:hover:not(.active) {
+	background-color: #1C1C1C;
+}
+.active {
+	background-color: #FF530D;
+}
+div.d1{
+	height:900px;
+	width:auto;
+}
+div.d2{
+	height:770px;
+	width:auto;
+	background-color:black
+	rgba(0,0,0,0.8);
+}
+
+
+div.d3{
+	background-color: black;
+	background-color: rgba(0, 0, 0,0.7);
+	height:130px;
+	width:auto;
+}
+div.d4{
+	background: white;
+	height: 150px;
+	margin-left:220px;
+	margin-right:220px;
+
+}
+footer {
+	background-color: black;
+  background-color: rgba(0, 0, 0,0.7);
+	text-align: center;
+
+
+}
+
+#cardapiodiv {
+	width: auto;
+  height: 770px;
+	background-color: #555;
+
+}
+
+</style>
+<head>
+<title>L'aquila</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="m1">
+<div class=" topo"> <img src="logo.jpg"> </div>
+<nav>
+  <div>
+    <ul>
+      <li><a href="Aquila.html">Home</a></li>
+      <li><a href="Cardapio.html">Cardápio</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<div id="cardapiodiv"
+</div>
+
+<div class="d1">
+	<div class="d2">
+		<body>
+		<span id="nome"> </span> <br>
+		<span id="descricao"> </span> <br>
+		<span id="preco"> </span> <br>
+		<span id="tamanho"> </span> <br>
+		<img id="imagem">
+		</body>
+		<script>
+		cardapio = {
+		              "carpaccio": {
+		                "nome":"Carpaccio",
+		                "imagem":"imagenslaquila/carpaccio.jpg",
+		                "descricao": "Prato criado na cidade de Veneza. Pela sua cor acharam bem parecido com as obras do pintor Vitore Carpaccio, daí a origim do nome. Carne crua, cortada em pequenas fatias, temperada com olho de mustarda, molho inglês, suco de limão, leite, sal e pimenta do reino branca.",
+		                "preco":["R$35.00"],
+		                "tamanho":["2 pessoas"]
+		              },
+		              "bruschetta": {
+		                "nome":"Bruschetta",
+		                "imagem":"imagenslaquila/bru.jpg",
+		                "descricao": "O mais conhecido antepasto foi criado no século XV. Feito com torrada, alho, pimenta, azeite, sal, tomate e manjericão.",
+		                "preco":["R$45.00"],
+		                "tamanho":["4 pessoas"]
+		              },
+		              "alcachofras": {
+		                "nome":"Alcachofras à moda romana",
+		                "imagem":"imagenslaquila/alca.jpg",
+		                "descricao": "Este legume originário do Oriente é muito valorizado na cozinha regional italiana. A alcachofra cozinha lentamente em caldo suave, com alho e salsa. Macio como manteiga, o resultado final proporciona uma satisfação divina. Podem ser comidas fatiadas ou inteiras.",
+		                "preco":["R$20.00", " R$35.00"],
+		                "tamanho":["1 pessoa", "2 pessoas"]
+		              },
+		              "ciabatta": {
+		                "nome":"Ciabatta",
+		                "imagem":"imagenslaquila/ciabatta.jpg",
+		                "descricao": "A ciabatta é um pão branco de origem italiana. Recheado com queijo, ovos e cogumelos chanterelle, esse aperitivo é de explodir o paladar.",
+		                "preco":["R$5.00"," R$10.00"],
+		                "tamanho":["1 pessoa", "2 pessoas"]
+		              },
+		                    "sphaguetti": {
+		                      "nome":"Sphaguetti alla carbonara",
+		                      "imagem":"imagenslaquila/espa.jpg",
+		                      "descricao": "Originário de Roma, esse prato italiano contém parmesão, queijo pecorino romano e toucinho (bacon). Trazemos a vocês o delicioso Carbonara!",
+		                      "preco":["R$40.00"," R$68.00"],
+		                      "tamanho":["1 pessoa", "2 pessoas"]
+		                    },
+		                    "risotto": {
+		                      "nome":"Risotto",
+		                      "imagem":"imagenslaquila/riso.jpg",
+		                      "descricao": "Prato típico do Norte da Itália, nós do L'aquila, trazemos esse tradicionalíssimo prato da cucina italiana. Cozinha lentamente, e preparado com frutos do mar, esse delicioso <i>arrozinho</i>vai surpreender seu paladar." ,
+		                      "preco":["R$75.00"],
+		                      "tamanho":["2 pessoas"]
+		                    },
+		                    "lasagna": {
+		                      "nome":"Lasagna",
+		                      "imagem":"imagenslaquila/lasa.jpg",
+		                      "descricao": "Uma das massas mais apreciadas da cucina italiana. A tradicional lasgana que preparamos leva queijo, carne, massa e nosso molho de tomate especial!.",
+		                      "preco":["R$50.00"],
+		                      "tamanho":["1 pessoa"]
+		                    },
+		                    "gnocci": {
+		                      "nome":"Gnocchi",
+		                      "imagem":"imagenslaquila/nho",
+		                      "descricao": "Uma das massas mais conhecidas do mundo, criado há muitos séculos atrás. Feito com as melhores batatas em nossa plantação, e servido com molho branco.",
+		                      "preco":["R$65.00"],
+		                      "tamanho":["1 ou 2 pessoas"]
+		                    },
+		                    "cotoletta": {
+		                      "nome":"Cotoletta alla Milanesa",
+		                      "imagem":"imagenslaquila/bife.jpg",
+		                      "descricao": "É o prato mais conhecido de Milão. Muito simples como a culinária italiana preza. Costeleta empanada!",
+		                      "preco":["R$40.00", " R$70.00"],
+		                      "tamanho":["1 pessoa", " 2 pessoas"]
+		                    },
+		        "gelato": {
+		          "nome":"Gelato",
+		          "imagem":"imagenslaquila/gelato.jpg",
+		          "descricao": "Gelato, o sorvete italiano. Uma das sobremesas mais tradicionais de nossa cucina! Temos Chocolate, Cereja, Doce de Leite e Morango.",
+		          "preco":["R$20.00", " R$23.00", " R$25.00", " R$25.00"],
+		          "sabores":["Morango","Doce de Leite", "Chocolate", "Cereja" ],
+		          "tamanho":["2 pessoas"]
+		        },
+		        "tiramisu": {
+		          "nome":"Tiramisù",
+		          "imagem":"imagenslaquila/tiramisu.jpg",
+		          "descricao": "É uma sobremesa tipicamente italiana, possivelmente originária de Treviso, região do Vêneto, e que consiste em camadas de biscoitos de champagne, também chamados de biscoitos tipo inglês ou palitos a la reine embebidas em café entremeadas por um creme à base de queijo mascarpone, creme de leite fresco, ovos, açúcar, vinho do tipo Marsala e polvilhadas com cacau em pó.",
+		          "preco":["R$20.00"],
+		          "tamanho":["1 pessoa"]
+		        },
+		        "torta": {
+		          "nome":"Torta Della Nonna",
+		          "imagem":"imagenslaquila/torta.jpg",
+		          "descricao": "Muito apreciada na região da Toscana e Ligúria, essa torta vai fazer você lembrar dos sabores de sua infância, e toda alegria que vem com ela!",
+		          "preco":["R$15.00"],
+		          "tamanho":["1 pessoa"]
+		        }
+		      }
+
+		  function getParameterByName(name, url) {
+		    if (!url) url = window.location.href;
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		        results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+		  }
+
+		  function exibeDetalhes(item) {
+		    document.getElementById("imagem").src = item.imagem;
+		    document.getElementById("nome").innerHTML = item.nome;
+		    document.getElementById("descricao").innerHTML = item.descricao;
+		    document.getElementById("preco").innerHTML = item.preco;
+		    document.getElementById("tamanho").innerHTML = item.tamanho;
+		  }
+
+		  var prato = getParameterByName('prato');
+		  exibeDetalhes(cardapio[prato]);
+		</script>
+
+
+
+		<div id="detalhes_pizza">
+
+		</div>
+    </div>
+    <div class="d3">
+</div>
+
+</div>
+
+
+<footer>
+		<font color="white"> Copyright <font>
+</footer>
+</body>
+</html>
